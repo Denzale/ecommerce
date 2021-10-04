@@ -5,7 +5,6 @@ import Rating from './Rating'
 function Products({ product }) {
     return (
         <Card className="my-3 p-2 rounded">
-
             <a href={'/product/${product.id'}>
                 <Card.Img src={product.image} />
             </a>
@@ -18,8 +17,8 @@ function Products({ product }) {
 
                 <Card.Text as="div">
                     <div className="my-3">
-                        {product.rating} from {product.numReviews} reviews
-                        <Rating value={product.rating} text={'${product.numReviews} reviews'}  color={'#f8e825'} />
+                        
+                        <Rating value={product.rating} text={`${product.numReviews} reviews`}  color={'#f8e825'} />
                     </div>
                 </Card.Text>
 
